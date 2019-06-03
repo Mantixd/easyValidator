@@ -226,7 +226,8 @@ This is a complete example of the navbar working, you only need to set the jquer
 ## Built With
 
 * [JQuery](https://jquery.com/) - The web framework used
-* [Bootstrap](https://getbootstrap.com/docs/4.3/components/navbar/) - The Bootstrap Navbar
+* [Bootstrap](https://getbootstrap.com/docs/4.3/components/navbar/) - The Bootstrap Tooltip
+* [Bootstrap Popover](https://getbootstrap.com/docs/4.0/components/popovers/) The Bootstrap Popover
 
 ## Contributing
 
