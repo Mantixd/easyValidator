@@ -1,0 +1,298 @@
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/easyValidator.js"></script>
+    <link rel="stylesheet" href="css/easyValidator.css" />
+    <style>
+    form{
+      border: 3px solid;
+      padding: 20px;
+    }
+
+    </style>
+    <script>
+        $(document).ready(function() {  
+            $('.testform').easyValidator({ 
+                options: {
+                  style: 'normal',
+                  inputs: {
+                    email:{
+                      type: 'input',
+                      reference: 'id',
+                      referencevalue: 'inputEmail3',
+                      msg: 'You must add an email.',
+                      showtype: 'popover',
+                      placement: "right"
+                    },
+                    password: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'password',
+                      msg: 'You must add a password.',
+                      showtype: 'p'
+                    },
+                    date: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'date',
+                      msg: 'You must add a date.',
+                      showtype: 'p'
+                    },
+                    datetimelocal: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'datetime-local',
+                      msg: 'You must add a datetime-local.',
+                      showtype: 'p'
+                    },
+                    file: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'file',
+                      msg: 'You must add a file.',
+                      showtype: 'p'
+                    },
+                    month: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'month',
+                      msg: 'You must add a month.',
+                      showtype: 'popover',
+                      placement: "right"
+                    },
+                    range: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'range',
+                      msg: 'You must add a range.',
+                      showtype: 'p'
+                    },
+                    search: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'search',
+                      msg: 'You must add a search.',
+                      showtype: 'p'
+                    },
+                    tel: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'tel',
+                      msg: 'You must add a tel.',
+                      showtype: 'p'
+                    },
+                    text: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'text',
+                      msg: 'You must add a text.',
+                      showtype: 'p'
+                    },
+                    time: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'time',
+                      msg: 'You must add a time.',
+                      showtype: 'p'
+                    },
+                    url: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'url',
+                      msg: 'You must add a url.',
+                      showtype: 'p'
+                    },
+                    week: {
+                      type: 'input',
+                      reference: 'class',
+                      referencevalue: 'week',
+                      msg: 'You must add a week.',
+                      showtype: 'p'
+                    },
+                    radios: {
+                      type: 'group',
+                      parenttype: 'id',
+                      parentvalue: 'radio-id',                    
+                      msg: 'You must select a radio button.',
+                      showtype: 'popover',
+                      placement: "right"
+                    },
+                    checkbox: {
+                      type: 'group',
+                      parenttype: 'class',
+                      parentvalue: 'checkbox-group',                    
+                      msg: 'You must select a checkbox.',
+                      showtype: 'p'
+                    },
+                    select:{
+                      type: 'input',
+                      reference: 'id',
+                      referencevalue: 'gridSelect1',
+                      msg: 'You must select an element from the list.',
+                      showtype: 'p'
+                    },
+                    textarea:{
+                      type: 'input',
+                      reference: 'id',
+                      referencevalue: 'txtarea',
+                      msg: 'The textarea can not be null.',
+                      showtype: 'p'
+                    },
+                    button: {
+                      reference: 'class',
+                      referencevalue: 'button',
+                    }
+                  }
+                }
+            });
+          });
+    </script>
+    </head>
+    <body>
+        <form class="testform">
+          <h1>easyValidator</h1>
+            <div>
+              <label for="inputEmail3">Email</label>
+              <div>
+                <input type="email" id="inputEmail3" placeholder="Email">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">Password</label>
+              <div>
+                <input type="password" class="password cuatro" id="inputPassword3" placeholder="Password">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">Date</label>
+              <div>
+                <input type="date" class="date cuatro" id="inputdate3" placeholder="date">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">Datetime-local</label>
+              <div>
+                <input type="datetime-local" class="datetime-local cuatro" id="inputdatetime-local3" placeholder="datetime-local">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">File</label>
+              <div>
+                <input type="file" class="file cuatro" id="inputfile3" placeholder="file">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">Month</label>
+              <div>
+                <input type="month" class="month cuatro" id="inputmonth3" placeholder="month">
+              </div>
+            </div>
+            <div>
+              <label for="inputPassword3">Range</label>
+              <div>
+                <input type="range" class="range cuatro" id="inputrange3" value="0" placeholder="range">
+              </div>
+            </div>
+            <div>
+            <label for="inputPassword3">Search</label>
+            <div>
+              <input type="search" class="search cuatro" id="inputsearch3" placeholder="search">
+            </div>
+          </div>
+            <div>
+            <label for="inputPassword3">Tel</label>
+            <div>
+              <input type="tel" class="tel cuatro" id="inputtel3" placeholder="tel">
+            </div>
+          </div>
+          <div>
+            <label for="inputPassword3">Text</label>
+            <div>
+              <input type="text" class="text cuatro" id="inputtext3" placeholder="text">
+            </div>
+          </div>
+          <div>
+            <label for="inputPassword3">Time</label>
+            <div>
+              <input type="time" class="time cuatro" id="inputtime3" placeholder="time">
+            </div>
+          </div>
+          <div>
+            <label for="inputPassword3">Url</label>
+            <div>
+              <input type="url" class="url cuatro" id="inputurl3" placeholder="url">
+            </div>
+          </div>
+          <div>
+            <label for="inputPassword3">Week</label>
+            <div>
+              <input type="week" class="week cuatro" id="inputweek3" placeholder="week">
+            </div>
+          </div>
+            <div>Radios</div>
+            <div id="radio-id" class="radio-group ded">
+              <div>
+                <input type="radio" name="gridRadios" id="gridRadios1" value="option1">
+                <label for="gridRadios1">
+                  First radio
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                <label for="gridRadios2">
+                  Second radio
+                </label>
+              </div>
+              <div>
+                <input type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                <label for="gridRadios3">
+                  Third radio
+                </label>
+              </div>
+            </div>
+          </div>
+            <div>
+              <div>Checkbox</div>
+              <div class="checkbox-group tres">
+                <div>
+                  <input type="checkbox" class="gridCheck1 dsds">
+                  <label for="gridCheck1">
+                    Example checkbox
+                  </label>
+                <div>
+                    <input type="checkbox" class="gridCheck2 dsds">
+                    <label for="gridCheck2">
+                      Example checkbox
+                    </label>
+                  </div>
+              </div>
+            </div>
+            <div>
+                <label for="select">Select</label>
+                <div>
+                <select id="gridSelect1">
+                  <option value="">Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>              
+              </div>  
+              </div>
+              <div>
+              <label>Text Area</label>
+              <div>
+              <textarea id="txtarea" name="message" rows="5" cols="50">              
+              </textarea>
+            </div>
+            </div>
+            <div>
+              <div>
+                <button type="submit" class="button dos">Validate</button>                
+              </div>
+            </div>
+          </form>
+    </body>
+</html>

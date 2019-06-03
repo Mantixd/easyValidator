@@ -1,0 +1,38 @@
+form {
+  margin: 0 auto;
+  width: 50%;
+
+}
+
+.easy-input-error::-webkit-input-placeholder {
+  color: #e63232;
+  font-weight: 400;
+}
+input,select,textarea{
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+}
+
+.easy-input-error {
+    outline: 1px solid #ffffff;
+    box-shadow: 0 0 0 1px red;
+    outline-offset: .25rem;
+    animation: 1.5s animateBorderOne ease-out infinite;
+    color: red;
+}
+.easy-group-error {
+  outline: 1px solid #ffffff;
+  box-shadow: 0 0 0 1px red;
+  outline-offset: .25rem;
+  animation: 1.5s animateBorderOne ease-out infinite;
+  border-radius: .25rem;
+  border: 1px solid #ced4da;
+  color: red;
+}
+  
+  @keyframes animateBorderOne {
+    to {
+      outline-offset: .25rem;
+      box-shadow: 0 0 0 3px #ffffff;
+    }
+  }

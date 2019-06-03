@@ -1,0 +1,19 @@
+{
+  "name": "@mantixd/easyvalidator",
+  "version": "1.0.0",
+  "description": "Easy JQuery validator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mantixd/easyValidator.git"
+  },
+  "author": "Ricardo Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mantixd/easyValidator/issues"
+  },
+  "homepage": "https://github.com/Mantixd/easyValidator#readme"
+}
