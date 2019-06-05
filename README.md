@@ -251,7 +251,8 @@ If my work likes you or helps you a little, i will apreciate it your help with t
 
 <a href="https://www.buymeacoffee.com/ricardoperez" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/black_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-<a href="https://paypal.me/MantixSystems" target="_blank">Paypal me</a>
+
+<a href="https://paypal.me/MantixSystems" target="_blank"><img width="150" height="150" src="http://chittagongit.com/images/paypal-donate-icon/paypal-donate-icon-15.jpg"></a>
 
 
 
