@@ -1,11 +1,11 @@
 <html>
     <head>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="js/easyValidator.js"></script>
-    <link rel="stylesheet" href="css/easyValidator.css" />
+    <script src="components/jquery/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="components/bootstrap/css/bootstrap.min.css">
+    <script src="components/popper/js/popper.min.js"></script>
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="components/easyvalidator/js/easyValidator.min.js"></script>
+    <link rel="stylesheet" href="components/easyvalidator/css/easyValidator.min.css" />
     <style>
     form{
       border: 3px solid;
@@ -15,139 +15,140 @@
     </style>
     <script>
         $(document).ready(function() {  
-            $('.testform').easyValidator({ 
-                options: {
-                  style: 'normal',
-                  inputs: {
-                    email:{
-                      type: 'input',
-                      reference: 'id',
-                      referencevalue: 'inputEmail3',
-                      msg: 'You must add an email.',
-                      showtype: 'popover',
-                      placement: "right"
-                    },
-                    password: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'password',
-                      msg: 'You must add a password.',
-                      showtype: 'p'
-                    },
-                    date: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'date',
-                      msg: 'You must add a date.',
-                      showtype: 'p'
-                    },
-                    datetimelocal: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'datetime-local',
-                      msg: 'You must add a datetime-local.',
-                      showtype: 'p'
-                    },
-                    file: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'file',
-                      msg: 'You must add a file.',
-                      showtype: 'p'
-                    },
-                    month: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'month',
-                      msg: 'You must add a month.',
-                      showtype: 'popover',
-                      placement: "right"
-                    },
-                    range: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'range',
-                      msg: 'You must add a range.',
-                      showtype: 'p'
-                    },
-                    search: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'search',
-                      msg: 'You must add a search.',
-                      showtype: 'p'
-                    },
-                    tel: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'tel',
-                      msg: 'You must add a tel.',
-                      showtype: 'p'
-                    },
-                    text: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'text',
-                      msg: 'You must add a text.',
-                      showtype: 'p'
-                    },
-                    time: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'time',
-                      msg: 'You must add a time.',
-                      showtype: 'p'
-                    },
-                    url: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'url',
-                      msg: 'You must add a url.',
-                      showtype: 'p'
-                    },
-                    week: {
-                      type: 'input',
-                      reference: 'class',
-                      referencevalue: 'week',
-                      msg: 'You must add a week.',
-                      showtype: 'p'
-                    },
-                    radios: {
-                      type: 'group',
-                      parenttype: 'id',
-                      parentvalue: 'radio-id',                    
-                      msg: 'You must select a radio button.',
-                      showtype: 'popover',
-                      placement: "right"
-                    },
-                    checkbox: {
-                      type: 'group',
-                      parenttype: 'class',
-                      parentvalue: 'checkbox-group',                    
-                      msg: 'You must select a checkbox.',
-                      showtype: 'p'
-                    },
-                    select:{
-                      type: 'input',
-                      reference: 'id',
-                      referencevalue: 'gridSelect1',
-                      msg: 'You must select an element from the list.',
-                      showtype: 'p'
-                    },
-                    textarea:{
-                      type: 'input',
-                      reference: 'id',
-                      referencevalue: 'txtarea',
-                      msg: 'The textarea can not be null.',
-                      showtype: 'p'
-                    },
-                    button: {
-                      reference: 'class',
-                      referencevalue: 'button',
+          $(".button").on('click', function (e) { 
+          e.preventDefault();
+              var isValid = $('.testform').easyValidator({ 
+                    options: {
+                      style: 'blinked',
+                      inputs: {
+                        email:{
+                          type: 'input',
+                          reference: 'id',
+                          referencevalue: 'inputEmail3',
+                          msg: 'You must add an email.',
+                          showtype: 'p',                          
+                          validateformat: true,
+                          validatemsg: 'The mail format is incorrect.'
+                        },
+                        password: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'password',
+                          msg: 'You must add a password.',
+                          showtype: 'p'
+                        },
+                        date: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'date',
+                          msg: 'You must add a date.',
+                          showtype: 'p'
+                        },
+                        datetimelocal: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'datetime-local',
+                          msg: 'You must add a datetime-local.',
+                          showtype: 'p'
+                        },
+                        file: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'file',
+                          msg: 'You must add a file.',
+                          showtype: 'p'
+                        },
+                        month: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'month',
+                          msg: 'You must add a month.',
+                          showtype: 'popover',
+                          placement: "right"
+                        },
+                        range: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'range',
+                          msg: 'You must add a range.',
+                          showtype: 'p'
+                        },
+                        search: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'search',
+                          msg: 'You must add a search.',
+                          showtype: 'p'
+                        },
+                        tel: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'tel',
+                          msg: 'You must add a tel.',
+                          showtype: 'p'
+                        },
+                        text: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'text',
+                          msg: 'You must add a text.',
+                          showtype: 'p'
+                        },
+                        time: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'time',
+                          msg: 'You must add a time.',
+                          showtype: 'p'
+                        },
+                        url: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'url',
+                          msg: 'You must add a url.',
+                          showtype: 'p'
+                        },
+                        week: {
+                          type: 'input',
+                          reference: 'class',
+                          referencevalue: 'week',
+                          msg: 'You must add a week.',
+                          showtype: 'p'
+                        },
+                        radios: {
+                          type: 'group',
+                          parenttype: 'id',
+                          parentvalue: 'radio-id',                    
+                          msg: 'You must select a radio button.',
+                          showtype: 'popover',
+                          placement: "right"
+                        },
+                        checkbox: {
+                          type: 'group',
+                          parenttype: 'class',
+                          parentvalue: 'checkbox-group',                    
+                          msg: 'You must select a checkbox.',
+                          showtype: 'p'
+                        },
+                        select:{
+                          type: 'input',
+                          reference: 'id',
+                          referencevalue: 'gridSelect1',
+                          msg: 'You must select an element from the list.',
+                          showtype: 'p'
+                        },
+                        textarea:{
+                          type: 'input',
+                          reference: 'id',
+                          referencevalue: 'txtarea',
+                          msg: 'The textarea can not be null.',
+                          showtype: 'p'
+                        }
+                      }
                     }
-                  }
-                }
-            });
+                  });
+                  console.log(isValid);
+              });
           });
     </script>
     </head>
