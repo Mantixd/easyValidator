@@ -1,6 +1,6 @@
 {
   "name": "@mantixd/easyvalidator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Easy JQuery validator",
   "main": "index.js",
   "scripts": {

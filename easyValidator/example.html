@@ -147,7 +147,11 @@
                       }
                     }
                   });
-                  console.log(isValid);
+                  if(isValid === true) {
+                    alert('Your isValid variable is equal to: '+ isValid + ', now you can proceed with your submit.');
+                  } else {
+                    alert('Your isValid variable is equal to: '+ isValid +' , it seems there is an error left.');
+                  }                                    
               });
           });
     </script>

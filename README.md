@@ -4,6 +4,12 @@ Easy JQuery validator
 ## Getting Started
 This is a way to validate your form, from an easy way.
 
+### Online Demo
+
+We can test the easyValidator library with this demo:
+
+[easyValidator Demo](https://ricardoperez.org/wiki/easyvalidator/demo/)
+
 ### Installing
 
 Please visit the wiki to know how to use it.
